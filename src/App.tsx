@@ -8,13 +8,14 @@ import React from "react";
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className="App text-[50px]">
         <main>
           {/* <Hero /> */}
           {/* <About /> */}
           {/* <Projects /> */}
           {/* <Contact /> */}
         </main>
+        Hello World
       </div>
     );
   }
