@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
-html {
+:root {
+    --h1-color: #A1C2BD;
+    --h3-color: #708993;
+    --base-color: #F4F4F4;
+    --svg-base-color: #19183B;
+}
+
+body {
     background: linear-gradient(to top left, #0C2B4E, #1D546C);
-    min-height: 100vh;
+    background-attachment: fixed;
 }

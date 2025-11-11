@@ -1,6 +1,6 @@
 import React from "react";
 
-// import Hero from './components/Hero';
+import Hero from './pages/Hero';
 // import About from './components/About';
 // import Projects from './components/Projects';
 // import Contact from './components/Contact';
@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <main>
-          {/* <Hero /> */}
+          <Hero />
           {/* <About /> */}
           {/* <Projects /> */}
           {/* <Contact /> */}
