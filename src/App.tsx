@@ -1,7 +1,7 @@
 import React from "react";
 
 import Hero from './pages/Hero';
-// import About from './components/About';
+import About from './pages/About';
 // import Projects from './components/Projects';
 // import Contact from './components/Contact';
 
@@ -11,7 +11,7 @@ class App extends React.Component {
       <div className="App">
         <main>
           <Hero />
-          {/* <About /> */}
+          <About />
           {/* <Projects /> */}
           {/* <Contact /> */}
         </main>
