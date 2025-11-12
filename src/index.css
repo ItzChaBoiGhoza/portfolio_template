@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
+
 :root {
-    --h1-color: #A1C2BD;
-    --h3-color: #708993;
-    --base-color: #F4F4F4;
-    --svg-base-color: #19183B;
+    --heading-one: #A1C2BD;
+    --heading-two: #E7F2EF;
+    --heading-three: #708993;
+    --base-font-color: #F4F4F4;
+    --base-color: #19183B;
+    --second-color: #1D546C;
+    --tertiary-color: #1A3D64;
+    --extra-color: #0C2B4E;
 }
 
 body {

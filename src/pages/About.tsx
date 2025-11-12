@@ -8,23 +8,23 @@ interface Tab {
 
 const tabs: Tab[] = [
   {
-    label: "About",
+    label: "ABOUT",
     short_summary: "Phasellus porta risus quis interdum pretium. Donec ut quam ut justo accumsan iaculis. Nam dignissim metus neque. In hac habitasse platea dictumst. Aenean a elit neque. Nam ultricies risus sit amet nulla pretium, vel condimentum nulla congue. Phasellus sed lacus massa. Cras commodo vehicula sem. Nullam in nulla maximus, tempus odio sed, gravida sapien. Vivamus vel massa molestie, consectetur urna in, interdum arcu. Sed quam lectus, consectetur id eros a, porta placerat felis. Pellentesque eget commodo elit. Aenean et tempor est, vitae convallis lacus. Nulla in risus vitae enim feugiat efficitur ac nec sapien. Suspendisse varius dapibus purus, sit amet sollicitudin libero congue volutpat. Duis rhoncus erat a malesuada sollicitudin. Ut suscipit libero porttitor metus maximus bibendum. Pellentesque vehicula odio tellus, ut tincidunt sem interdum ut. In sapien nisi, cursus ac tempus vel, fermentum sed est. Aliquam tincidunt efficitur velit, ut interdum nisl tempus vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed et dui finibus, feugiat sapien sed, ornare leo. Sed ut pretium est. Nunc rhoncus suscipit viverra.  Suspendisse lacinia lacus nec magna aliquam, a congue enim aliquet. Fusce sollicitudin nisl nisl, aliquam viverra mi venenatis non. Curabitur mattis non odio ut dignissim. Proin sagittis sollicitudin lacus, eu cursus sem viverra in. Sed ac leo tincidunt, maximus neque et, ultricies diam. Donec id sapien scelerisque, iaculis ligula nec, fringilla orci. Vestibulum leo libero, ultrices id metus nec, aliquam egestas leo.",
   },
   {
-    label: "Skills",
+    label: "SKILLS",
     short_summary: "Morbi aliquet erat sit amet hendrerit rutrum. In risus ipsum, scelerisque quis magna et, laoreet pharetra est. Cras vestibulum magna volutpat, ultricies ante id, hendrerit dolor. Cras nec ex sapien. Integer varius ligula ante, vel cursus elit pharetra eget. Sed sollicitudin dapibus tempus. ",
   },
   {
-    label: "Experiences",
+    label: "EXPERIENCES",
     short_summary: "Etiam vel dapibus erat. Nullam commodo ut dui eu sodales. Curabitur tincidunt mattis eros, quis vehicula augue gravida id. In sed tortor maximus lacus placerat egestas quis quis odio. Nunc molestie metus vel fringilla blandit. Mauris pellentesque arcu mi, non tempor odio varius vitae. Pellentesque vel arcu sit amet nulla suscipit sollicitudin quis vitae felis. Curabitur placerat mi non elit fringilla, ac convallis tellus tincidunt.",
   },
   {
-    label: "Education",
+    label: "EDUCATION",
     short_summary: "Aenean felis odio, auctor id ex nec, accumsan feugiat enim. Curabitur pulvinar scelerisque neque, vitae varius turpis facilisis tristique. Phasellus a elit varius, viverra metus et, cursus augue. Morbi vitae leo sit amet nisl laoreet lacinia. Donec finibus sapien id massa blandit, vel elementum enim euismod. Etiam id justo at orci varius malesuada at a felis. Donec ullamcorper nec elit vel commodo.",
   },
   {
-    label: "Certifications",
+    label: "CERTIFICATIONS",
     short_summary: "Suspendisse lacinia lacus nec magna aliquam, a congue enim aliquet. Fusce sollicitudin nisl nisl, aliquam viverra mi venenatis non. Curabitur mattis non odio ut dignissim. Proin sagittis sollicitudin lacus, eu cursus sem viverra in. Sed ac leo tincidunt, maximus neque et, ultricies diam. Donec id sapien scelerisque, iaculis ligula nec, fringilla orci. Vestibulum leo libero, ultrices id metus nec, aliquam egestas leo. ",
   }
 ];
@@ -35,7 +35,7 @@ export default function About() {
   return (
     <section id="about" className="min-h-screens py-40">
         <h2 className="text-[55px] font-bold text-gray-800 text-center pb-10">Nice to Meet You</h2>
-        <div className="py-15 mx-35 bg-gray-800/25 rounded-4xl shadoow-xl">
+        <div className="py-15 mx-35 bg-gray-800/10 rounded-4xl shadow-xl/30">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                 <div className="flex flex-col items-center md:items-start gap-6">
                     <div className="w-80 h-80 bg-gray-200 rounded-2xl flex items-center justify-center shadow-sm">
@@ -75,19 +75,19 @@ export default function About() {
                             <button
                             key={tab.label}
                             onClick={() => setActiveTab(tab)}
-                            className={`px-4 py-2 rounded-xl transition text-sm font-medium
+                            className={`transition text-sm font-medium
                                 ${
                                 activeTab.label === tab.label
-                                    ? "bg-blue-600 text-white shadow"
-                                    : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+                                    ? "text-white font-bold text-[25px] mx-2"
+                                    : "text-gray-800 hover:text-gray-300 text-[20px] mx-2"
                                 }`}
                             >
                             {tab.label}
                             </button>
                         ))}
                     </div>
-                <div className="p-5 border border-gray-200 rounded-xl shadow-sm bg-white transition">
-                    <p className="text-gray-700">{activeTab.short_summary}</p>
+                <div className="p-5 shadow-xl rounded-xl shadow-sm bg-gray-800/35 transition">
+                    <p className="text-white">{activeTab.short_summary}</p>
                 </div>
                 </div>
             </div>
