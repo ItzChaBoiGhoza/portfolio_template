@@ -2,7 +2,7 @@ import React from "react";
 
 import Hero from './pages/Hero';
 import About from './pages/About';
-// import Projects from './components/Projects';
+import Projects from './pages/Projects';
 // import Contact from './components/Contact';
 
 class App extends React.Component {
@@ -12,7 +12,7 @@ class App extends React.Component {
         <main>
           <Hero />
           <About />
-          {/* <Projects /> */}
+          <Projects />
           {/* <Contact /> */}
         </main>
       </div>

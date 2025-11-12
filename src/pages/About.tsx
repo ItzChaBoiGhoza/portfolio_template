@@ -34,9 +34,9 @@ export default function About() {
 
   return (
     <section id="about" className="min-h-screens py-40">
-        <h2 className="text-[55px] font-bold text-gray-800 text-center pb-10">Nice to Meet You</h2>
-        <div className="py-15 mx-35 bg-gray-800/10 rounded-4xl shadow-xl/30">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <h2 className="text-[55px] font-bold text-gray-800 text-center pb-10">Nice to Meet YOU!</h2>
+        <div className="">
+            <div className="max-w-8xl mx-50 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                 <div className="flex flex-col items-center md:items-start gap-6">
                     <div className="w-80 h-80 bg-gray-200 rounded-2xl flex items-center justify-center shadow-sm">
                         <span className="text-gray-500 text-sm">Profile Picture</span>
@@ -69,8 +69,8 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="md:col-span-2 space-y-6">
-                    <div className="flex flex-wrap justify-center gap-3">
+                <div className="md:col-span-2 space-y-6 pb-5 px-7 bg-gray-800/25 rounded-xl shadow-xl/30">
+                    <div className="flex flex-wrap justify-center gap-3 my-3">
                         {tabs.map((tab) => (
                             <button
                             key={tab.label}
@@ -86,7 +86,7 @@ export default function About() {
                             </button>
                         ))}
                     </div>
-                <div className="p-5 shadow-xl rounded-xl shadow-sm bg-gray-800/35 transition">
+                <div className="p-5 rounded-xl bg-gray-800/55 transition">
                     <p className="text-white">{activeTab.short_summary}</p>
                 </div>
                 </div>
