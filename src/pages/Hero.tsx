@@ -7,9 +7,9 @@ import './Hero.css'
 const Hero = () => {
     return (
         <header className="min-h-screens">
-            <div>
+            {/* <div>
                 <Navbar />
-            </div>
+            </div> */}
             <div className="grid grid-flow justify-items-center mt-[40vh]">
                 <div>
                     <h1 className="text-[65px] text-(--h1-color) text-center">CODE WITH PURPOSE</h1>
