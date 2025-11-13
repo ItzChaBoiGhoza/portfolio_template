@@ -1,6 +1,20 @@
 const AboutTab = () => {
     return (
         <div>
+            <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="mr-2">
+                    <h2>NAME</h2>
+                    <hr />
+                    <p>Some name</p>
+                    <br />
+                </div>
+                <div>
+                    <h2>LOCATION</h2>
+                    <hr />
+                    <p>Some location</p>
+                    <br />
+                </div>
+            </div>
             <h2>PROFESSIONAL SUMMARY</h2>
             <hr />
             <p>Some summary</p>

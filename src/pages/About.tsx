@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import AboutTab from '../components/Tabs/AboutTab'
 import ProfessionalTab from '../components/Tabs/ProfessionalTab'
-import PersonalTab from '../components/Tabs/PersonalTab'
+// import PersonalTab from '../components/Tabs/PersonalTab'
 import CertificationTab from '../components/Tabs/CertificationTab'
 
 interface Tab {
@@ -12,10 +12,6 @@ interface Tab {
 }
 
 const tabs: Tab[] = [
-    {
-        label: "PERSONAL",
-        content: <PersonalTab />,
-    },
     {
         label: "ABOUT",
         content: <AboutTab />,
