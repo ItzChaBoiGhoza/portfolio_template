@@ -29,7 +29,7 @@ export default function About() {
   const [activeTab, setActiveTab] = useState<Tab>(tabs[0]);
 
   return (
-    <section id="about" className="min-h-screens py-55">
+    <section id="about" className="min-h-screens mt-[30vh]">
         <h2 className="text-[55px] font-bold text-gray-800 text-center pb-10">Insert Text Here</h2>
         <div className="">
             <div className="max-w-8xl mx-50 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
@@ -62,7 +62,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="md:col-span-2 space-y-6 pb-5 px-7 bg-gray-800/25 rounded-xl shadow-xl/30 border-1">
+                <div className="md:col-span-2 space-y-6 pb-5 px-7 bg-gray-800/25 rounded-xl shadow-xl/30 border-1 max-w-6xl">
                     <div className="flex flex-wrap justify-center gap-3 my-3">
                         {tabs.map((tab) => (
                             <button
