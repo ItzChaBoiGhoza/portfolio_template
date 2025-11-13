@@ -3,7 +3,9 @@ import React from "react";
 import Hero from './pages/Hero';
 import About from './pages/About';
 import Projects from './pages/Projects';
-// import Contact from './components/Contact';
+import Contact from './pages/Contact';
+
+import Footer from './components/Footer'
 
 class App extends React.Component {
   render() {
@@ -13,7 +15,8 @@ class App extends React.Component {
           <Hero />
           <About />
           <Projects />
-          {/* <Contact /> */}
+          <Contact />
+          <Footer />
         </main>
       </div>
     );
