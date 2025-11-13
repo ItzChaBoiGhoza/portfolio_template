@@ -34,7 +34,7 @@ export default function About() {
   const [activeTab, setActiveTab] = useState<Tab>(tabs[0]);
 
   return (
-    <section id="about" className="min-h-screens py-40">
+    <section id="about" className="min-h-screens py-55">
         <h2 className="text-[55px] font-bold text-gray-800 text-center pb-10">Insert Text Here</h2>
         <div className="">
             <div className="max-w-8xl mx-50 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
