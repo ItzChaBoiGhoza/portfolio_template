@@ -18,3 +18,22 @@ body {
     margin: 0;
     padding: 0;
 }
+
+@keyframes pulseScale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); 
+  }
+}
+
+.animate-pulse-scale {
+  animation: pulseScale 2s ease-in-out infinite;
+}
+
+.animate-pulse-scale:hover {
+    animation: 0;
+    color: gray;
+    transform: scale(1.2);
+}

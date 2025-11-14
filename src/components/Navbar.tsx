@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
@@ -35,7 +34,8 @@ export default function Navbar() {
         },
     ];
 
-    const [activeSection, setActiveSection] = useState('about');
+    const [activeSection, setActiveSection] = useState('hero');
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -43,7 +43,7 @@ export default function Navbar() {
                 const el = document.getElementById(s.id);
                 if (!el) return false;
                 const rect = el.getBoundingClientRect();
-                return rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
+                return rect.top <= window.innerHeight * 0.4 && rect.bottom >= window.innerHeight * 0.4;
             });
             if (current) setActiveSection(current.id);
         };
@@ -61,13 +61,12 @@ export default function Navbar() {
                 href={`#${s.id}`}
                 className={`relative group transition-all duration-300 ${
                 activeSection === s.id
-                    ? "text-blue-400 scale-110"
-                    : "text-gray-300 hover:text-white"
+                    ? "text-blue-400 scale-145"
+                    : "text-gray-300 hover:text-white hover:scale-125 transition duration-700 ease-in-out"
                 }`}
             >
                 <div className="text-2xl">{s.icon}</div>
-                {/* Tooltip */}
-                <span className="absolute left-14 top-1/2 -translate-y-1/2 text-white text-[20px] opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
+                <span className={`absolute top-1/2 -translate-y-1/2 text-white text-[13px] transition-all duration-700 whitespace-nowrap ${activeSection === s.id ? "opacity-100 left-10" : "opacity-0 group-hover:opacity-100 left-14"}`}>
                 {s.label}
                 </span>
             </a>
