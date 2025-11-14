@@ -50,7 +50,7 @@ const project_tabs: Tab[] = [
 export default function Projects() {
     const [activeTab, setActiveTab] = useState<Tab>(project_tabs[0]);
     return (
-        <section id="projects" className="mt-[35vh]">
+        <section id="projects" className="">
             <h2 className="text-[55px] font-bold text-gray-800 text-center pb-3">
                 Projects
             </h2>
