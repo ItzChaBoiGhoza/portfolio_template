@@ -5,7 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 
 class App extends React.Component {
   render() {

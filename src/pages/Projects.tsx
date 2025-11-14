@@ -67,7 +67,7 @@ export default function Projects() {
     }, []);
 
     return (
-        <section id="projects" className="">
+        <div id="projects">
             
             <h2 className={`transition-all duration-700 delay-500 ease-in-out ${visible ? "opacity-100 text-[55px] font-bold text-gray-800 text-center pb-10" : "opacity-0 "}`}>
                 Projects
@@ -83,7 +83,7 @@ export default function Projects() {
                                 ${
                                 activeTab.title === tab.title
                                     ? "text-white font-bold text-[25px] mx-2"
-                                    : "text-gray-800 hover:text-gray-300 text-[20px] mx-2 transition duration-700 ease-in-out"
+                                    : "text-gray-800 hover:text-gray-300 text-[20px] mx-2 transition duration-700 ease-in-out hover:scale-105 cursor-pointer"
                                 }`}
                             >
                             {tab.title}
@@ -112,6 +112,6 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };

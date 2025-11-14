@@ -20,7 +20,7 @@ export default function Contact() {
     }, []);
 
     return (
-        <section id="contact" className="mt-[20vh] mb-[30vh]">
+        <div id="contact" className="mt-[20vh] mb-[30vh]">
             <h2 className={`transition-all duration-700 delay-500 ease-in-out ${visible ? "opacity-100 text-[55px] font-bold text-gray-800 text-center pb-10" : "opacity-0 "}`}>
                 CONTACT
             </h2>
@@ -38,6 +38,6 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };

@@ -1,8 +1,8 @@
 import { type JSX, useState, useEffect, useRef } from "react";
 
-import AboutTab from '../components/Tabs/AboutTab'
-import ProfessionalTab from '../components/Tabs/ProfessionalTab'
-import CertificationTab from '../components/Tabs/CertificationTab'
+import AboutTab from '../components/Tabs/AboutTab';
+import ProfessionalTab from '../components/Tabs/ProfessionalTab';
+import CertificationTab from '../components/Tabs/CertificationTab';
 
 interface Tab {
   label: string;
@@ -88,7 +88,7 @@ export default function About() {
                                     ${
                                     activeTab.label === tab.label
                                         ? "text-white font-bold text-[25px] mx-2"
-                                        : "text-gray-800 hover:text-gray-300 text-[20px] mx-2 cursor-pointer"
+                                        : "text-gray-800 hover:text-gray-300 text-[20px] transition duration-700 ease-in-out hover:scale-105 mx-2 cursor-pointer"
                                     }`}
                                 >
                                 {tab.label}
